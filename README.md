@@ -58,12 +58,12 @@ Machines within the network can only be accessed by SSH.
 
 A summary of the access policies in place can be found in the table below.
 
-| Name       | Function                   | IP Address | Operating System         |
-|------------|----------------------------|------------|--------------------------|
-| Jump Box   | Gateway                    | 10.1.0.7   | Linux (Ubuntu 18.04 LTS) |
-| Web-1      | Web Server - Docker - DVWA | 10.1.0.5   | Linux (Ubuntu 18.04 LTS) |
-| Web-2      | Web Server - Docker - DVWA | 10.1.0.6   | Linux (Ubuntu 18.04 LTS) |
-| ELK-Server | ELK Stack                  | 10.0.0.4   | Linux (Ubuntu 18.04 LTS) |
+| Name       | Publicly Accessible     | Allowed IP Address                                 |
+|------------|-------------------------|----------------------------------------------------|
+| Jump-Box   | No                      | Personal IP Address                                |
+| Web-1      | Yes Thru Load Ballancer | 13.66.204.159 LB Public IP 10.0.0.4 - JumpBox      |
+| Web-2      | Yes Thru Load Ballancer | 13.66.204.159 LB Public IP 10.0.0.4 JumpBox        |
+| ELK-Server | No                      | SSH 10.0.0.4 - JumpBox HTTP Port 5601 Personal IP  |
 
 ### Elk Configuration
 
