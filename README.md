@@ -111,7 +111,11 @@ _TODO: Answer the following questions to fill in the blanks:_
 2. sudo docker container list -a - Locate the ansible container
 3. sudo docker start <name of container>(Funny_Name)
 4. sudo docker attach <name of container>(Funny_Name)
-5.
+5. cd /etc/ansible
+6. ansible-playbook elk-playbook.yml (Installs and Configures ELK-Server)
+7. cd /etc/ansible/
+8. ansible-playbook beats-playbook.yml (Installs and Configures Beats)
+9. Open a new browser on Personal Workstation, navigate to (ELK-Server-PublicIP:5601/app/kibana) - This will bring up Kibana Web Portal
 
 
 ### References
