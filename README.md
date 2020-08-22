@@ -39,22 +39,22 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 The configuration details of each machine may be found below.
 
-| Name       | Function   | IP Address | Operating System |
-|------------|------------|------------|------------------|
-| Jump Box   | Gateway    | 10.1.0.7   | Linux            |
-| Web-1      | Web Server | 10.1.0.5   | Linux            |
-| Web-2      | Web Server | 10.1.0.6   | Linux            |
-| ELK-Server | ELK Stack  | 10.0.0.4   | Linux            |
+| Name       | Function                   | IP Address | Operating System         |
+|------------|----------------------------|------------|--------------------------|
+| Jump Box   | Gateway                    | 10.1.0.7   | Linux (Ubuntu 18.04 LTS) |
+| Web-1      | Web Server - Docker - DVWA | 10.1.0.5   | Linux (Ubuntu 18.04 LTS) |
+| Web-2      | Web Server - Docker - DVWA | 10.1.0.6   | Linux (Ubuntu 18.04 LTS) |
+| ELK-Server | ELK Stack                  | 10.0.0.4   | Linux (Ubuntu 18.04 LTS) |
 
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet.
 
 Only the Jump Box Provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+* Personal IP Address
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Machines within the network can only be accessed by SSH.
+* The ELK-Server is only accessible by SSH from the JumpBox and via web access from Personal IP Address.
 
 A summary of the access policies in place can be found in the table below.
 
