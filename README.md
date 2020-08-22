@@ -58,11 +58,12 @@ Machines within the network can only be accessed by SSH.
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Name       | Function                   | IP Address | Operating System         |
+|------------|----------------------------|------------|--------------------------|
+| Jump Box   | Gateway                    | 10.1.0.7   | Linux (Ubuntu 18.04 LTS) |
+| Web-1      | Web Server - Docker - DVWA | 10.1.0.5   | Linux (Ubuntu 18.04 LTS) |
+| Web-2      | Web Server - Docker - DVWA | 10.1.0.6   | Linux (Ubuntu 18.04 LTS) |
+| ELK-Server | ELK Stack                  | 10.0.0.4   | Linux (Ubuntu 18.04 LTS) |
 
 ### Elk Configuration
 
