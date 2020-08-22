@@ -1,4 +1,5 @@
-# Cybersecurity-Bootcamp-Project1
+# Arizona State University Cybersecurity Bootcamp Project 1
+by Daniel Alicie 2020
 ## Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
